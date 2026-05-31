@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAVEE | Curated Private Gatherings Calendar</title>
+  <meta name="description" content="Explore upcoming private events, luxury dinner masterclasses, technological salons, and grand galas at undisclosed Chavee chambers.">
+  
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="CHAVEE | Gatherings Calendar">
+  <meta property="og:description" content="Participate in tailored cultural collisions. Filter and request access to our exclusive event listings.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="logo-link">
+        <svg class="logo-key-icon" viewBox="0 0 24 24">
+          <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+        </svg>
+        CHAVEE<span>.</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" id="nav-home">Home</a></li>
+        <li class="nav-item active"><a href="events.html" id="nav-events">Gatherings</a></li>
+        <li class="nav-item"><a href="signup.html" id="nav-signup">Apply</a></li>
+        <li class="nav-item">
+          <a href="signup.html" class="btn btn-gold" style="padding: 0.5rem 1.2rem; font-size: 0.78rem;" id="cta-header-apply">Request Access</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- GATHERINGS TITLE HEADER -->
+    <section class="events-header" id="events-header-section">
+      <div class="container">
+        <span class="hero-subtitle">Curated Chapters</span>
+        <h1 class="gold-gradient-text">Private Gatherings</h1>
+        <p style="max-width: 600px; margin: 1.5rem auto 0; font-size: 1.1rem;">
+          Select from our seasonally tailored schedule. Request individual invitations or apply for a permanent passport to gain standard access to all chambers.
+        </p>
+
+        <!-- SEARCH AND FILTERS CONTROLS -->
+        <div class="search-filter-controls">
+          <div class="search-box-container">
+            <input type="text" id="event-search" class="search-input" placeholder="Search gatherings by title, city, or interest tags..." autocomplete="off">
+            <svg class="search-icon-svg" viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+          </div>
+
+          <div class="filter-pills" role="tablist" aria-label="Gatherings categories">
+            <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All Channels</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="culinary">Culinary Craft</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="art">Arts & Culture</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="ideas">Tech & Ideas</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="galas">Galas & Soirées</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS GRID CONTAINER -->
+    <section class="events-section" id="events-grid-section">
+      <div class="container">
+        <div class="events-grid" id="events-grid">
+          <!-- Populated dynamically via js/events.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;" id="footer-logo">
+            <svg class="logo-key-icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
+              <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+            </svg>
+            CHAVEE<span>.</span>
+          </a>
+          <p>Unlocking premium, sensory spaces and intellectual synergy for the visionary circle.</p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home">Home Sanctuary</a></li>
+            <li><a href="events.html" id="footer-link-events">Upcoming Gatherings</a></li>
+            <li><a href="signup.html" id="footer-link-apply">Apply for Passport</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Chapters</h4>
+          <ul class="footer-links">
+            <li><a href="#" id="footer-link-london">London Chapter</a></li>
+            <li><a href="#" id="footer-link-soho">Soho Atelier</a></li>
+            <li><a href="#" id="footer-link-chelsea">Chelsea Sanctuary</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHAVEE. All rights reserved. Vetting is subject to board terms.</p>
+        <div class="footer-socials">
+          <a href="#" id="footer-social-ig">Instagram</a>
+          <a href="#" id="footer-social-tw">Twitter</a>
+          <a href="#" id="footer-social-in">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>
