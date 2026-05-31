@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAVEE | Apply For Exclusive Invitation</title>
+  <meta name="description" content="Apply for Chavee private membership. Submit your credentials to our vetting council to access premium global event chapters.">
+  
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="CHAVEE | Membership Application">
+  <meta property="og:description" content="Vetted access to high-fidelity gatherings, art salons, and secret sensory networks.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="logo-link">
+        <svg class="logo-key-icon" viewBox="0 0 24 24">
+          <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+        </svg>
+        CHAVEE<span>.</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" id="nav-home">Home</a></li>
+        <li class="nav-item"><a href="events.html" id="nav-events">Gatherings</a></li>
+        <li class="nav-item active"><a href="signup.html" id="nav-signup">Apply</a></li>
+        <li class="nav-item">
+          <a href="signup.html" class="btn btn-gold" style="padding: 0.5rem 1.2rem; font-size: 0.78rem;" id="cta-header-apply">Request Access</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="signup-section" id="signup-section-main">
+    <div class="container signup-container">
+      
+      <!-- HEADER INFOS -->
+      <div class="form-header">
+        <span class="hero-subtitle">Application Portal</span>
+        <h2 class="gold-gradient-text" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Vetting Council</h2>
+        <p>Complete your profile submission below to initiate review by the founding board.</p>
+      </div>
+
+      <!-- PROGRESS INDICATOR BAR -->
+      <div class="signup-progress">
+        <div class="progress-bar-fill" id="progress-fill"></div>
+        <div class="progress-step-node active" id="node-0" aria-label="Step 1: Credentials">1</div>
+        <div class="progress-step-node" id="node-1" aria-label="Step 2: Curation">2</div>
+        <div class="progress-step-node" id="node-2" aria-label="Step 3: Verification">3</div>
+      </div>
+
+      <!-- APPLICATION FORM -->
+      <div class="glass-card" style="padding: 3rem 2.5rem;" id="form-card-container">
+        <form id="application-form" onsubmit="return false;" novalidate>
+          
+          <!-- STEP 1: PERSONAL CREDENTIALS -->
+          <div class="form-step active" id="step-1">
+            <h3 style="margin-bottom: 1.5rem; color: var(--accent-gold-light);">01. Personal Profile</h3>
+            
+            <div class="form-group-grid">
+              <div class="form-field form-group-full">
+                <input type="text" id="app-name" class="form-input" placeholder=" " required autocomplete="name">
+                <label for="app-name" class="form-label">Full Nominee Name</label>
+                <span class="validation-error-text" id="error-name">Please enter your full name (minimum 3 characters).</span>
+              </div>
+              
+              <div class="form-field">
+                <input type="email" id="app-email" class="form-input" placeholder=" " required autocomplete="email">
+                <label for="app-email" class="form-label">Electronic Mail Address</label>
+                <span class="validation-error-text" id="error-email">Please enter a valid electronic mail.</span>
+              </div>
+
+              <div class="form-field">
+                <input type="tel" id="app-phone" class="form-input" placeholder=" " required autocomplete="tel">
+                <label for="app-phone" class="form-label">Mobile Contact / WhatsApp</label>
+                <span class="validation-error-text" id="error-phone">Please enter a valid telephone coordinate.</span>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+              * High-fidelity authentication is conducted. Provide real coordinate metrics to ensure successful board contact.
+            </p>
+          </div>
+
+          <!-- STEP 2: INTERESTS & STATEMENTS -->
+          <div class="form-step" id="step-2">
+            <h3 style="margin-bottom: 1.5rem; color: var(--accent-gold-light);">02. Curated Channels</h3>
+            <p class="interests-headline">Select your primary interests inside the club:</p>
+            
+            <!-- Dynamic Tags Cloud -->
+            <div class="tags-selector-grid" id="tags-selector">
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Culinary Craft</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Arts & Culture</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Tech & Ideas</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Galas & Soirées</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Rare Vintages</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Venture Capital</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Molecular Alchemy</button>
+              <button type="button" class="interest-tag-pill" role="switch" aria-pressed="false">Deep House Ambient</button>
+            </div>
+
+            <!-- Statement Text Field -->
+            <div class="form-field form-group-full">
+              <textarea id="app-statement" class="form-input" placeholder=" " style="min-height: 100px; resize: vertical;" required></textarea>
+              <label for="app-statement" class="form-label">Nominee Statement of Intent</label>
+              <span class="validation-error-text" id="error-statement">Please formulate a statement of intent (minimum 15 characters).</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Explain briefly how your background aligns with our pillars of art, technology, and quiet impact.
+            </p>
+          </div>
+
+          <!-- STEP 3: DECLARATION & NDAs -->
+          <div class="form-step" id="step-3">
+            <h3 style="margin-bottom: 1.5rem; color: var(--accent-gold-light);">03. Vetting Declaration</h3>
+            
+            <!-- NDA Scroll Area -->
+            <div class="declaration-box" id="nda-box">
+              <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-family: var(--font-sans); font-size: 0.95rem;">CHAVEE Code of Confidentiality & Honor</h4>
+              <p style="margin-bottom: 0.8rem; font-size: 0.85rem;">
+                1. Absolute Privacy: Members agree that all physical gathering coordinates, menus, structural details of vaults, and fellow member profiles are strictly confidential. Sharing coordinates on public channels is grounds for immediate membership revocation.
+              </p>
+              <p style="margin-bottom: 0.8rem; font-size: 0.85rem;">
+                2. Non-Transaction Policy: The study rooms and lounges are sanctuaries. Standard sales pitching, business solicitor behaviors, and aggressive commercial transactions are strictly prohibited.
+              </p>
+              <p style="margin-bottom: 0.8rem; font-size: 0.85rem;">
+                3. Vetting Acceptance: By submitting, the applicant agrees that the founding board's decisions are final, non-negotiable, and private. Vetting results are delivered strictly through encrypted digital channels.
+              </p>
+            </div>
+
+            <!-- Agreements check -->
+            <label class="checkbox-row" id="nda-agree-label">
+              <input type="checkbox" id="nda-agree" required>
+              <span class="custom-checkbox"></span>
+              <span class="checkbox-label">
+                I hereby declare that I read, understood, and solemnly bind myself to the <a href="#">CHAVEE Code of Confidentiality</a> and board Vetting Terms.
+              </span>
+            </label>
+          </div>
+
+          <!-- MULTI-STEP CONTROLLERS ROW -->
+          <div class="form-buttons-row">
+            <button type="button" id="btn-prev" class="btn btn-outline" style="visibility: hidden;">Previous Step</button>
+            <button type="button" id="btn-next" class="btn btn-gold">Continue</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;" id="footer-logo">
+            <svg class="logo-key-icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
+              <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+            </svg>
+            CHAVEE<span>.</span>
+          </a>
+          <p>Unlocking premium, sensory spaces and intellectual synergy for the visionary circle.</p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home">Home Sanctuary</a></li>
+            <li><a href="events.html" id="footer-link-events">Upcoming Gatherings</a></li>
+            <li><a href="signup.html" id="footer-link-apply">Apply for Passport</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Chapters</h4>
+          <ul class="footer-links">
+            <li><a href="#" id="footer-link-london">London Chapter</a></li>
+            <li><a href="#" id="footer-link-soho">Soho Atelier</a></li>
+            <li><a href="#" id="footer-link-chelsea">Chelsea Sanctuary</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHAVEE. All rights reserved. Vetting is subject to board terms.</p>
+        <div class="footer-socials">
+          <a href="#" id="footer-social-ig">Instagram</a>
+          <a href="#" id="footer-social-tw">Twitter</a>
+          <a href="#" id="footer-social-in">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAVEE | Submission Confirmed</title>
+  <meta name="description" content="Thank you for applying to Chavee. Your private credentials are under vetting review by our founding board.">
+  
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="CHAVEE | Nomination Confirmed">
+  <meta property="og:description" content="Passport credentials successfully received. Review process active.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Print specific overrides for the passport pass -->
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #print-area, #print-area * {
+        visibility: visible;
+      }
+      #print-area {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -20%) scale(1.1);
+        width: 90%;
+        border: 2px solid #d4af37 !important;
+        background: #0f0f13 !important;
+        color: #f8f9fa !important;
+      }
+      header, footer, .thankyou-title, .thankyou-desc, .success-badge-glow, .thankyou-ctas {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="logo-link">
+        <svg class="logo-key-icon" viewBox="0 0 24 24">
+          <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+        </svg>
+        CHAVEE<span>.</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" id="nav-home">Home</a></li>
+        <li class="nav-item"><a href="events.html" id="nav-events">Gatherings</a></li>
+        <li class="nav-item"><a href="signup.html" id="nav-signup">Apply</a></li>
+        <li class="nav-item">
+          <a href="signup.html" class="btn btn-gold" style="padding: 0.5rem 1.2rem; font-size: 0.78rem;" id="cta-header-apply">Request Access</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="thankyou-section" id="thankyou-section-main">
+    <div class="container thankyou-wrapper">
+      
+      <!-- SUCCESS GLOW CIRCLE -->
+      <div class="success-badge-glow">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+      </div>
+
+      <h1 class="gold-gradient-text thankyou-title" style="font-size: clamp(2rem, 4vw, 3rem);">Nomination Submitted</h1>
+      <p class="thankyou-desc">
+        Your portfolio has been safely received. The founding board will review your credentials and contact you via encrypted coordinate lines.
+      </p>
+
+      <!-- DYNAMIC WIDGET NOMINEE PASSPORT CARD -->
+      <div class="nominee-passport" id="print-area">
+        <div class="passport-logo">
+          <span>CHAVEE Private Members Club</span>
+          <span class="passport-badge">NOMINEE PASS</span>
+        </div>
+        
+        <div class="passport-row-grid">
+          <div class="passport-cell">
+            <h5>Nominee Account Name</h5>
+            <p id="passport-name">Jane Sterling Doe</p>
+          </div>
+          <div class="passport-cell card-id">
+            <h5>Nominee Reference ID</h5>
+            <p id="passport-id">CHV-9824-A</p>
+          </div>
+        </div>
+
+        <div class="passport-row-grid">
+          <div class="passport-cell">
+            <h5>Vetting Registration Date</h5>
+            <p id="passport-date">May 30, 2026</p>
+          </div>
+          <div class="passport-cell">
+            <h5>Access Coordinates</h5>
+            <p id="passport-event">Global Chapter Access</p>
+          </div>
+        </div>
+
+        <!-- Selected Interests List inside card -->
+        <div style="margin-bottom: 2rem;">
+          <h5 style="text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.5rem;">Registered Interest Channels</h5>
+          <div id="passport-interests" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="font-size: 0.75rem; background: rgba(255,255,255,0.04); padding: 0.25rem 0.65rem; border-radius: 4px; color: var(--text-secondary);">Culinary Craft</span>
+            <span style="font-size: 0.75rem; background: rgba(255,255,255,0.04); padding: 0.25rem 0.65rem; border-radius: 4px; color: var(--text-secondary);">Arts & Culture</span>
+          </div>
+        </div>
+
+        <!-- Passport Footer Status -->
+        <div class="passport-footer">
+          <div class="passport-status-pill">
+            <span class="passport-status-dot"></span>
+            Status: Vetting Board Active
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">CHAVEE-SECURE-ID</span>
+        </div>
+
+        <!-- Passport Watermark background SVG -->
+        <div class="passport-watermark">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- PAGE CTAs -->
+      <div class="thankyou-ctas">
+        <button onclick="window.print()" class="btn btn-outline" id="btn-print-passport">Print Nomination Pass</button>
+        <a href="events.html" class="btn btn-gold" id="btn-explore-after-signup">Browse Gatherings</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="index.html" class="logo" style="font-size: 1.5rem;" id="footer-logo">
+            <svg class="logo-key-icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
+              <path d="M7 2c-2.76 0-5 2.24-5 5 0 2.05 1.23 3.81 3 4.58V22h4v-4h3v-3h1v-4.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5zm0 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+            </svg>
+            CHAVEE<span>.</span>
+          </a>
+          <p>Unlocking premium, sensory spaces and intellectual synergy for the visionary circle.</p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home">Home Sanctuary</a></li>
+            <li><a href="events.html" id="footer-link-events">Upcoming Gatherings</a></li>
+            <li><a href="signup.html" id="footer-link-apply">Apply for Passport</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Chapters</h4>
+          <ul class="footer-links">
+            <li><a href="#" id="footer-link-london">London Chapter</a></li>
+            <li><a href="#" id="footer-link-soho">Soho Atelier</a></li>
+            <li><a href="#" id="footer-link-chelsea">Chelsea Sanctuary</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 CHAVEE. All rights reserved. Vetting is subject to board terms.</p>
+        <div class="footer-socials">
+          <a href="#" id="footer-social-ig">Instagram</a>
+          <a href="#" id="footer-social-tw">Twitter</a>
+          <a href="#" id="footer-social-in">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Local storage details parser with fail-safe values
+    document.addEventListener('DOMContentLoaded', () => {
+      const nameField = document.getElementById('passport-name');
+      const idField = document.getElementById('passport-id');
+      const dateField = document.getElementById('passport-date');
+      const eventField = document.getElementById('passport-event');
+      const interestsField = document.getElementById('passport-interests');
+      
+      // Grab profile
+      let profile = null;
+      try {
+        profile = JSON.parse(localStorage.getItem('chavee_nominee_profile'));
+      } catch(e) {
+        console.error('Error fetching nominee details', e);
+      }
+
+      // Default mock properties if loaded directly
+      const mockInterests = ['Culinary Craft', 'Arts & Culture', 'Rare Vintages', 'Venture Capital'];
+      const defaultProfile = {
+        id: `CHV-${Math.floor(1000 + Math.random() * 9000)}-S`,
+        name: 'Alexander Mercer',
+        date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+        eventRequested: 'Global Chapter Access',
+        interests: mockInterests
+      };
+
+      const finalProfile = profile || defaultProfile;
+
+      // Populate card
+      if (nameField) nameField.textContent = finalProfile.name;
+      if (idField) idField.textContent = finalProfile.id;
+      if (dateField) dateField.textContent = finalProfile.date;
+      if (eventField) {
+        eventField.textContent = finalProfile.eventRequested === 'Global Chapter Access' 
+          ? 'Global Chapter Access' 
+          : `Req: ${finalProfile.eventRequested}`;
+      }
+
+      // Render interest tags
+      if (interestsField && finalProfile.interests) {
+        if (finalProfile.interests.length === 0) {
+          interestsField.innerHTML = `<span style="font-size: 0.75rem; background: rgba(255,255,255,0.04); padding: 0.25rem 0.65rem; border-radius: 4px; color: var(--text-muted);">None Selected</span>`;
+        } else {
+          interestsField.innerHTML = finalProfile.interests.map(item => {
+            return `<span style="font-size: 0.75rem; background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.2); padding: 0.25rem 0.65rem; border-radius: 4px; color: var(--accent-gold-light);">${escapeHtml(item)}</span>`;
+          }).join('');
+        }
+      }
+    });
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+    }
+  </script>
+</body>
+</html>
